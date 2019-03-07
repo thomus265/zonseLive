@@ -29,6 +29,12 @@
 					    		<input type="text" name="title" id="title" placeholder="Title" class="uk-input">
 					    	</div>
 					    	<div class="uk-width-1-2@s">
+					    		<input type="email" name="email" id="email" placeholder="Email" class="uk-input">
+					    	</div>
+					    	<div class="uk-width-1-2@s">
+					    		<input type="text" name="phone" id="phone" placeholder="Phone" class="uk-input">
+					    	</div>
+					    	<div class="uk-width-1-2@s">
 					    		<div uk-form-custom="target: true">
 						            <input type="file" name="album" id="album" accept="image/*">
 						            <input class="uk-input uk-form-width-large" type="text" placeholder="Select Album/Song Art" disabled>
@@ -70,10 +76,19 @@
 		e.preventDefault();
 		var artist=$("#artist").val();
         var title=$("#title").val();
+        var phone=$("#phone").val();
+        var email=$("#email").val();
         var album=$("#album").val();
         var song=$("#song").val();
-        if(artist=="" || title=="" || album=="" || song==""){
-        	alert();
+        if(artist=="" || title=="" || album=="" || song=="" || phone=="" || email==""){
+        	$("#ikani").removeClass('btn-primary');
+				$("#ikani").addClass('btn-warning');
+				$("#ikani").html('Please Fill in all fields');
+        	setTimeout(function(){
+        		$("#ikani").removeClass('btn-warning');
+				$("#ikani").addClass('btn-primary');
+				$("#ikani").html('Submit Song');
+        	},2000);
         }
         else{
         	$.ajax({

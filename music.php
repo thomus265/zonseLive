@@ -139,7 +139,7 @@
           <div class="col-sm-7" >
             <center>
               <div id="bannerAd" style="margin-bottom: 3%; ">
-                <img src="assets/img/ads/crystal.jpg" width="100%" height="30px">
+                <img src="assets/img/ads/golo.jpg" width="100%" height="30px">
               </div>
             </center>
             <div class="container heading">

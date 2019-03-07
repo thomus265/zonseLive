@@ -124,7 +124,7 @@
       </ul>
       <center>
               <div id="bannerAd" style="margin-bottom: 5%; ">
-                <img src="assets/img/ads/pink.jpg" width="100%" height="30px">
+                <img src="assets/img/ads/golo.jpg" width="100%" height="30px">
               </div>
             </center>
 

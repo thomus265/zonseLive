@@ -3,7 +3,7 @@
 </div>
 
         
-<div class="twitter-fed" style="min-height: 500px">
+<div class="twitter-fed">
     <a class="twitter-timeline" data-height="550" href="https://twitter.com/ZonseLive?ref_src=twsrc%5Etfw">Tweets by ZonseLive</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 

@@ -3,6 +3,8 @@
 
 	$artist=$_POST['artist'];
 	$title=$_POST['title'];
+	$phone=$_POST['phone'];
+	$email=$_POST['email'];
 
     $uploadfile = $_FILES["album"]["tmp_name"];
     $folderPath = "../assets/submissions/art/";
@@ -29,7 +31,7 @@
 
 			if(move_uploaded_file($_FILES["song"]["tmp_name"], $path . $imgname)){
 				 
-				 $q=mysqli_query($mysqli,"INSERT INTO `submissions` (`sub_id`, `artist`, `title`, `art`, `song`, `reviewed`, `posted`) VALUES (NULL, '$artist', '$title', '$iconame', '$imgname', '0', CURRENT_TIMESTAMP)");
+				 $q=mysqli_query($mysqli,"INSERT INTO `submissions` (`sub_id`, `artist`, `title`, `art`, `song`, `reviewed`,`phone`,`email`, `posted`) VALUES (NULL, '$artist', '$title', '$iconame', '$imgname', '0', '$phone','$email', CURRENT_TIMESTAMP)");
 				 if(!$q){
 				 	echo "Error";
 				 }
