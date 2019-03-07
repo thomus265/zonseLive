@@ -13,7 +13,8 @@
 			            <th>Song Name</th>
 			            <th>Song Art</th>
 			            <th>Song File</th>
-			            <th>Uploaded</th>
+			            <th>Email</th>
+			            <th>Phone</th>
 			            <th>Review</th>
 			        </tr>
 			    </thead>
@@ -27,7 +28,8 @@
 			            <td> <?php echo $res['title']; ?> </td>
 			            <td> <a uk-tooltip="click to download" href="../assets/submissions/art/<?php echo $res['art'] ?>"><img width="50px" src="../assets/submissions/art/<?php echo $res['art'] ?>"></a> </td>
 			            <td> <a href="../assets/submissions/<?php echo $res['song']; ?>" uk-icon="icon: download; ratio:2"></a>  </td>
-			            <td><?php echo conv($res['posted']) ?></td>
+			            <td><?php echo $res['email'] ?></td>
+			            <td><?php echo $res['phone'] ?></td>
 			            <td><a href="javascript: reviewed(<?php echo $res['sub_id'] ?>)" class="btn btn-primary">Comfirm Review</a></td>
 			        </tr>
 			        <?php
