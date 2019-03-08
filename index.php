@@ -1,4 +1,8 @@
-<?php require('inc/header.php') ?>
+<?php 
+
+require('inc/header.php')
+
+?>
 <section id="home_content">
   <div class="container-fluid" style="margin-top: 3%">
     <div class="row">
