@@ -39,10 +39,19 @@
 							<?php
 						}
 						}
-						$qr = mysqli_query($mysqli,"SELECT * FROM videos");
+						
 						
 					 ?>
 				</div>
+			<div>
+				<?php 
+				$q = mysqli_query($mysqli,"SELECT * FROM youtube");
+				while($res=mysqli_fetch_array($q)){
+					echo $res['link'];
+				}
+				
+				?>
+			</div>
 		</div>
 	</div>
 </div>
