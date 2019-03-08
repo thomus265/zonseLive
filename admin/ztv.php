@@ -137,7 +137,7 @@
                 },
                 success: function(xhr)
                 {
-                	$("#output").html(xhr);
+               		alert(xhr);
                 },
                 error: function(){
 
